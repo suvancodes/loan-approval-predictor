@@ -1,0 +1,16 @@
+[2025-11-30 22:19:21,880] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+[2025-11-30 22:19:21,880] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-11-30 22:19:22,065] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:19:22] "GET / HTTP/1.1" 200 -
+[2025-11-30 22:19:22,810] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:19:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-11-30 22:19:48,305] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:19:48] "GET /home HTTP/1.1" 200 -
+[2025-11-30 22:21:05,133] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:05] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2025-11-30 22:21:05,138] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:05] "GET /result HTTP/1.1" 200 -
+[2025-11-30 22:21:28,872] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:28] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2025-11-30 22:21:28,876] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:28] "GET /result HTTP/1.1" 200 -
+[2025-11-30 22:21:30,637] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:30] "GET /home HTTP/1.1" 200 -
+[2025-11-30 22:21:49,296] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:49] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2025-11-30 22:21:49,299] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:49] "GET /result HTTP/1.1" 200 -
+[2025-11-30 22:21:51,123] 97 werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 22:21:51] "GET /home HTTP/1.1" 200 -

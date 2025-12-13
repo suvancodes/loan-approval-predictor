@@ -17,7 +17,7 @@
  [ 1 79]]
 [2025-11-24 13:14:57,762] 63 root - INFO - Classification Report:
               precision    recall  f1-score   support
-
+              
          0.0       0.95      0.42      0.58        43
          1.0       0.76      0.99      0.86        80
 
