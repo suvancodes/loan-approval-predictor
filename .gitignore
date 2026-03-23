@@ -146,3 +146,5 @@ venv
 venv/
 src/bank-loan-approval-prediction
 src/bank-loan-approval-prediction
+__pycache__/
+*.pyc
