@@ -1,9 +1,0 @@
-[2025-12-08 17:22:32,560] 100 __main__ - INFO - Starting server on port 5000
-[2025-12-08 17:22:37,588] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.32:5000
-[2025-12-08 17:22:37,588] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
-[2025-12-08 17:22:58,243] 97 werkzeug - INFO - 127.0.0.1 - - [08/Dec/2025 17:22:58] "GET / HTTP/1.1" 200 -
-[2025-12-08 17:22:58,610] 97 werkzeug - INFO - 127.0.0.1 - - [08/Dec/2025 17:22:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-[2025-12-08 17:23:00,082] 97 werkzeug - INFO - 127.0.0.1 - - [08/Dec/2025 17:23:00] "GET /home HTTP/1.1" 200 -

@@ -1,5 +1,0 @@
-[2025-11-24 16:14:07,788] 97 werkzeug - WARNING -  * Debugger is active!
-[2025-11-24 16:14:07,797] 97 werkzeug - INFO -  * Debugger PIN: 165-882-651
-[2025-11-24 16:14:13,830] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 16:14:13] "GET /home HTTP/1.1" 200 -
-[2025-11-24 16:14:19,446] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 16:14:19] "GET / HTTP/1.1" 200 -
-[2025-11-24 16:14:21,090] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 16:14:21] "GET /home HTTP/1.1" 200 -

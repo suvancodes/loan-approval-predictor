@@ -1,0 +1,23 @@
+[2026-03-23 20:08:07,959] 135 __main__ - INFO - Starting server on port 5000
+[2026-03-23 20:08:12,978] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+[2026-03-23 20:08:12,978] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2026-03-23 20:08:25,814] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:08:25] "GET /home HTTP/1.1" 200 -
+[2026-03-23 20:08:53,226] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:08:53] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:08:53,227] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:08:53] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:08:53,227] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:08:53] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:08:53,236] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:08:53] "GET /result HTTP/1.1" 200 -
+[2026-03-23 20:09:03,636] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:09:03] "GET / HTTP/1.1" 200 -
+[2026-03-23 20:09:05,852] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:09:05] "GET /home HTTP/1.1" 200 -
+[2026-03-23 20:09:25,570] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:09:25] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:09:25,573] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:09:25] "GET /result HTTP/1.1" 200 -
+[2026-03-23 20:10:03,380] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:10:03] "GET / HTTP/1.1" 200 -
+[2026-03-23 20:10:05,179] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:10:05] "GET /home HTTP/1.1" 200 -
+[2026-03-23 20:10:25,525] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:10:25] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:10:25,528] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:10:25] "GET /result HTTP/1.1" 200 -
+[2026-03-23 20:11:13,212] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:11:13] "[32mGET /result HTTP/1.1[0m" 302 -
+[2026-03-23 20:11:13,215] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:11:13] "GET /home HTTP/1.1" 200 -
+[2026-03-23 20:11:32,314] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:11:32] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:11:32,316] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:11:32] "GET /result HTTP/1.1" 200 -

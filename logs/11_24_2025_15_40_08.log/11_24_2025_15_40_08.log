@@ -1,6 +1,0 @@
-[2025-11-24 15:40:09,020] 97 werkzeug - WARNING -  * Debugger is active!
-[2025-11-24 15:40:09,029] 97 werkzeug - INFO -  * Debugger PIN: 121-457-033
-[2025-11-24 15:40:09,925] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 15:40:09] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
-[2025-11-24 15:40:09,963] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 15:40:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-[2025-11-24 15:40:19,016] 97 werkzeug - INFO - 127.0.0.1 - - [24/Nov/2025 15:40:19] "GET /health HTTP/1.1" 200 -
-[2025-11-24 15:41:20,639] 97 werkzeug - INFO -  * Detected change in '/Users/apple/AI_ML/0project-ML/Bank Lone Approval prediction/app.py', reloading

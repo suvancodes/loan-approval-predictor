@@ -1,0 +1,9 @@
+[2026-03-23 20:17:46,122] 62 __main__ - INFO - Starting server on port 5000
+[2026-03-23 20:17:46,155] 97 werkzeug - WARNING -  * Debugger is active!
+[2026-03-23 20:17:46,167] 97 werkzeug - INFO -  * Debugger PIN: 165-882-651
+[2026-03-23 20:17:47,475] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:17:47] "[32mGET /result HTTP/1.1[0m" 302 -
+[2026-03-23 20:17:47,481] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:17:47] "GET /home HTTP/1.1" 200 -
+[2026-03-23 20:17:55,862] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:17:55] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:17:55,869] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:17:55] "GET /result HTTP/1.1" 200 -
+[2026-03-23 20:20:36,235] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:20:36] "[32mPOST /predict HTTP/1.1[0m" 302 -
+[2026-03-23 20:20:36,239] 97 werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 20:20:36] "GET /result HTTP/1.1" 200 -

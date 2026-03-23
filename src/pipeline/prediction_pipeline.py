@@ -4,14 +4,17 @@ import pandas as pd
 from src.exception import CustomException
 from src.utlit import load_obj
 
+# Get the project root directory
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 class PredictPipeline:
     def __init__(self):
         pass
 
     def predict(self, df):
         try:
-            model_path = os.path.join("artifact", "model.pkl")
-            preprocessor_path = os.path.join("artifact", "preprocessor.pkl")
+            model_path = os.path.join(BASE_DIR, "artifact", "model.pkl")
+            preprocessor_path = os.path.join(BASE_DIR, "artifact", "preprocessor.pkl")
 
             if not os.path.exists(model_path):
                 raise CustomException(f"Model file not found: {model_path}. Run the training pipeline to create it.", sys)

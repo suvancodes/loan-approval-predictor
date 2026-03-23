@@ -107,10 +107,10 @@
         <div class="card p-4 mb-3">
           <h4 class="mb-3">Enter Applicant Details</h4>
 
-          <form id="predictForm" class="row g-3">
+          <form method="post" action="/predict" class="row g-3">
             <div class="col-12">
               <label class="form-label">Bank Name</label>
-              <select id="Bank_Name" class="form-select" required>
+              <select name="Bank_Name" class="form-select" required>
                 <option value="" selected disabled>Select bank</option>
                 <option value="SBI bank">SBI Bank</option>
                 <option value="AXIX bank">AXIX Bank</option>
@@ -121,84 +121,63 @@
 
             <div class="col-md-3">
               <label class="form-label">Gender</label>
-              <select id="Gender" class="form-select" required>
+              <select name="Gender" class="form-select" required>
                 <option value="1">Male</option><option value="0">Female</option>
               </select>
             </div>
 
             <div class="col-md-3">
               <label class="form-label">Married</label>
-              <select id="Married" class="form-select" required>
+              <select name="Married" class="form-select" required>
                 <option value="1">Yes</option><option value="0">No</option>
               </select>
             </div>
 
             <div class="col-md-3">
               <label class="form-label">Education</label>
-              <select id="Education" class="form-select" required>
+              <select name="Education" class="form-select" required>
                 <option value="1">Graduate</option><option value="0">Not Graduate</option>
               </select>
             </div>
 
             <div class="col-md-3">
               <label class="form-label">Self Employed</label>
-              <select id="Self_Employed" class="form-select" required>
+              <select name="Self_Employed" class="form-select" required>
                 <option value="0">No</option><option value="1">Yes</option>
               </select>
             </div>
 
             <div class="col-md-4">
               <label class="form-label">Applicant Income</label>
-              <input id="ApplicantIncome" type="number" class="form-control" placeholder="e.g. 5000" required>
+              <input name="ApplicantIncome" type="number" class="form-control" placeholder="e.g. 5000" required>
             </div>
 
             <div class="col-md-4">
               <label class="form-label">Coapplicant Income</label>
-              <input id="CoapplicantIncome" type="number" class="form-control" placeholder="e.g. 0" required>
+              <input name="CoapplicantIncome" type="number" class="form-control" placeholder="e.g. 0" required>
             </div>
 
             <div class="col-md-4">
               <label class="form-label">Loan Amount</label>
-              <input id="LoanAmount" type="number" class="form-control" placeholder="e.g. 128" required>
+              <input name="LoanAmount" type="number" class="form-control" placeholder="e.g. 128" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Loan Term (months)</label>
-              <input id="Loan_Amount_Term" type="number" class="form-control" placeholder="e.g. 360" required>
+              <input name="Loan_Amount_Term" type="number" class="form-control" placeholder="e.g. 360" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Credit History</label>
-              <select id="Credit_History" class="form-select" required>
+              <select name="Credit_History" class="form-select" required>
                 <option value="1">Good</option><option value="0">Bad</option>
               </select>
             </div>
 
             <div class="col-12 text-end">
-              <button id="submitBtn" type="submit" class="btn btn-primary btn-lg">
-                <i class="bi bi-lightning-charge me-2"></i> Predict
-              </button>
+              <button type="submit" class="btn btn-primary btn-lg">Predict</button>
             </div>
           </form>
-        </div>
-
-        <div id="resultCard" class="card p-4" style="display:none;">
-          <div class="text-center">
-            <h5 class="mb-3">Prediction</h5>
-            <div id="resultLabel" class="result-badge approved">Approved</div>
-
-            <div class="mt-3 text-start">
-              <div class="mb-2 d-flex justify-content-between"><small>Probability (Approve)</small><small id="pApproveText">-</small></div>
-              <div class="progress mb-3" style="height:16px;"><div id="pApproveBar" class="progress-bar approve-bar prob-bar" role="progressbar" style="width:0%"></div></div>
-
-              <div class="mb-2 d-flex justify-content-between"><small>Probability (Reject)</small><small id="pRejectText">-</small></div>
-              <div class="progress" style="height:16px;"><div id="pRejectBar" class="progress-bar reject-bar prob-bar" role="progressbar" style="width:0%"></div></div>
-            </div>
-
-            <div class="mt-3">
-              <a href="#" id="tryAgain" class="btn btn-outline-secondary">Try again</a>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -280,4 +259,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-web: gunicorn app:app --bind 0.0.0.0:$PORT
+<!-- web: gunicorn app:app --bind 0.0.0.0:$PORT -->

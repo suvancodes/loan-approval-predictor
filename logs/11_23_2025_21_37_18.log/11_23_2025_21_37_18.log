@@ -1,8 +1,0 @@
-[2025-11-23 21:37:18,762] 23 root - INFO - Entered the data ingestion method
-[2025-11-23 21:37:18,769] 26 root - INFO - Read the dataset as a dataframe
-[2025-11-23 21:37:18,774] 30 root - INFO - Saved raw data
-[2025-11-23 21:37:18,774] 32 root - INFO - Train-test split initiated
-[2025-11-23 21:37:18,779] 37 root - INFO - Data ingestion completed successfully
-[2025-11-23 21:37:18,782] 54 root - INFO - Read train and test data successfully
-[2025-11-23 21:37:18,782] 38 root - INFO - Categorical columns encoding is complete
-[2025-11-23 21:37:18,782] 39 root - INFO - Numerical columns standard scaling is complete
