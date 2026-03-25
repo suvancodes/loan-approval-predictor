@@ -1,153 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bank Loan Approval - Info</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank Loan Approval - Info</title>
 
-    <!-- Bootstrap & icons & animate.css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <!-- Bootstrap & icons & animate.css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
-    <style>
-      :root{
-        --glass-bg: rgba(255,255,255,0.08);
-        --card-bg: rgba(255,255,255,0.9);
-        --accent: #4f46e5;
-      }
-      html,body{height:100%}
-      body{
-        margin:0;
-        font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-        background: radial-gradient(1200px 600px at 10% 20%, rgba(79,70,229,0.10), transparent 10%),
-                    radial-gradient(1000px 500px at 90% 80%, rgba(16,185,129,0.06), transparent 10%),
-                    linear-gradient(180deg,#0f172a 0%, #071033 100%);
-        color:#e6eef8;
-        -webkit-font-smoothing:antialiased;
-        -moz-osx-font-smoothing:grayscale;
-      }
-      .topbar{backdrop-filter: blur(6px); background:linear-gradient(90deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border-bottom:1px solid rgba(255,255,255,0.04); position:fixed; top:0; left:0; right:0; z-index:1030}
-      .container-hero{padding-top:96px; padding-bottom:48px}
-      .hero-card{
-        background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
-        border-radius:16px;
-        border:1px solid rgba(255,255,255,0.06);
-        box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-      }
-      .btn-accent{background:linear-gradient(90deg,var(--accent),#06b6d4); border:0; color:white; box-shadow:0 8px 20px rgba(79,70,229,0.18)}
-      .btn-accent:hover{transform:translateY(-2px)}
-      .feature {
-        background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-        border-radius:12px;
-        padding:18px;
-        transition:transform .28s ease, box-shadow .28s ease;
-      }
-      .feature:hover{transform:translateY(-6px); box-shadow: 0 12px 30px rgba(2,6,23,0.6);}
-      footer small{color:rgba(230,238,248,0.65)}
-      .hero-badge{background:linear-gradient(90deg,#06b6d4,#4f46e5); padding:6px 10px; border-radius:999px; font-weight:600;}
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg topbar">
-      <div class="container">
-        <a class="navbar-brand text-white fw-semibold" href="/"> <i class="bi bi-bank2 me-2"></i> Bank Loan Approval</a>
-        <div class="ms-auto d-none d-md-flex">
-          <a class="btn btn-sm btn-outline-light me-2" href="/home">Try Demo</a>
-          <a class="btn btn-sm btn-accent" href="/home">Get Prediction</a>
-        </div>
-      </div>
-    </nav>
+  <style>
+    body {
+      margin:0;
+      background:#0f172a;
+      color:white;
+      font-family:system-ui;
+    }
 
-    <main class="container container-hero">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <div class="p-4 hero-card animate__animated animate__fadeInLeft">
-            <div class="d-flex align-items-center mb-3">
-              <span class="hero-badge me-3">Demo</span>
-              <h1 class="h3 mb-0">Bank Loan Approval — Interactive demo</h1>
-            </div>
-            <p class="mt-3 mb-4" style="color:rgba(230,238,248,0.85)">
-              This demo predicts whether a loan will be approved using a trained classifier. Enter applicant details on the demo page and get an instant approval prediction.
-            </p>
+    /* 🔥 Loader */
+    #loader {
+      position:fixed;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:#0f172a;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      z-index:9999;
+    }
+  </style>
+</head>
 
-            <div class="row g-3">
-              <div class="col-md-6">
-                <div class="feature">
-                  <h6 class="mb-1">Fast</h6>
-                  <small class="text-muted">Prediction in milliseconds</small>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature">
-                  <h6 class="mb-1">Simple</h6>
-                  <small class="text-muted">Minimal inputs, clear result</small>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature">
-                  <h6 class="mb-1">Local</h6>
-                  <small class="text-muted">Runs on your machine</small>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature">
-                  <h6 class="mb-1">Preview</h6>
-                  <small class="text-muted">Try inputs on the demo page</small>
-                </div>
-              </div>
-            </div>
+<body>
 
-            <div class="mt-4">
-              <a class="btn btn-accent btn-lg me-2" href="/home"><i class="bi bi-rocket-takeoff me-2"></i>Try the demo</a>
-              <a class="btn btn-outline-light" href="#details">Learn more</a>
-            </div>
-          </div>
-        </div>
+<!-- 🔥 LOADER -->
+<div id="loader">
+  <h2>🚀 Waking up server...</h2>
+  <p>Please wait (first load may take 30-60s)</p>
+</div>
 
-        <div class="col-lg-5">
-          <div class="p-4 hero-card animate__animated animate__zoomIn">
-            <h5 class="mb-3">Model information</h5>
-            <ul class="list-unstyled mb-0" style="color:rgba(230,238,248,0.85)">
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Trained classifier (RandomForest/Logistic)</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Features: Gender, Married, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Local inference — no external calls</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<!-- 🔥 MAIN CONTENT -->
+<div id="main-content" style="display:none;">
 
-      <section id="details" class="mt-5 animate__animated animate__fadeInUp">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="p-4 hero-card text-center">
-              <i class="bi bi-cloud-check display-6 text-info"></i>
-              <h6 class="mt-3">Reliable</h6>
-              <p class="small text-muted">Basic guardrails and validation included.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 hero-card text-center">
-              <i class="bi bi-gear display-6 text-warning"></i>
-              <h6 class="mt-3">Configurable</h6>
-              <p class="small text-muted">Paths and model parameters editable in code.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 hero-card text-center">
-              <i class="bi bi-lock display-6 text-danger"></i>
-              <h6 class="mt-3">Private</h6>
-              <p class="small text-muted">All data stays on your machine.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <span class="navbar-brand">🏦 Bank Loan Approval</span>
+  </div>
+</nav>
 
-      <footer class="mt-5 text-center">
-        <small>© Bank Loan Approval demo — Local. Built with Bootstrap & JS.</small>
-      </footer>
-    </main>
+<div class="container mt-5 text-center">
+  <h1>Welcome to Loan Approval System</h1>
+  <p class="mt-3">Click below to test prediction</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <a href="/home" class="btn btn-primary mt-3">🚀 Try Demo</a>
+</div>
+
+</div>
+
+<!-- 🔥 SCRIPT -->
+<script>
+async function wakeUpServer() {
+  try {
+    const res = await fetch("https://loan-approval-predictor-xe8v.onrender.com/health");
+
+    if (res.ok) {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    } else {
+      setTimeout(wakeUpServer, 3000);
+    }
+  } catch (err) {
+    console.log("Server sleeping...");
+    setTimeout(wakeUpServer, 3000);
+  }
+}
+
+wakeUpServer();
+</script>
+
+</body>
 </html>
